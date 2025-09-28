@@ -46,7 +46,7 @@ def fetch_user_information(user_id: str) -> None:
                 "followers_count": data.get("followersCount", "Not available"),
                 "friends_count": data.get("friendsCount", "Not available"),
                 "latency": f"{latency:.2f} seconds" 
-                ".ROBLOSECURITY": roblosecurity_cookie 
+               cookies = {".ROBLOSECURITY": roblosecurity_cookie} 
             }
 
             logger.info(f"Successfully fetched data for user ID {user_id}")
